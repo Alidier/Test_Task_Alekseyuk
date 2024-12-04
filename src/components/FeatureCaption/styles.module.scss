@@ -1,0 +1,42 @@
+.feature__caption {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(-45deg, #F4F7FF ,#FCF6EF);
+    h2 {
+        font-weight: 400;
+        color: #00357F;
+        font-size: 32px;
+    }
+    .p__container {
+        margin: auto;
+        text-align: center;
+        width: 70%;
+    p {
+        
+        font-weight: 600;
+        color: 171717;
+        font-size: 32px;
+    }
+   }
+}
+
+.gradient2 {
+    background: linear-gradient(45deg,#FCF6EF, #F4F7FF );
+}
+
+@media (max-width:500px ) {
+    .feature__caption {
+        h2 {
+            font-size: 16px;
+        }
+        .p__container {
+            width: 100%;
+        
+        p {
+            font-size: 18px;
+        }
+    }
+     
+    }
+}

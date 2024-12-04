@@ -1,0 +1,244 @@
+footer {
+    
+    background: linear-gradient(-45deg,#FEF8F3, #FAF6FE);
+    .footer__container {
+        margin: auto;
+        width: 1600px;
+        height: 407px;
+        padding-top: 50px;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .copyright {
+            text-align: left;
+            margin-left: 10px;
+            font-size: 16;
+            color: #171717;
+            opacity: 20%;
+            margin-bottom: 65px;
+            margin-top: 20px;
+        }
+        .upper__footer {
+            display: flex;
+            width: 1440px;
+            height: 182px;
+            .contactss {
+                display: flex;
+            }
+            .BelEz {
+                margin-left: 80px;
+                p {
+                    width: 100%;
+                    color: #718096;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .p_2 {
+                    margin-left: 50px;
+                }
+            }
+            .PrezBel {
+                margin-left: 50px;
+                p {
+                    color: #718096;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                &:p:last-child {
+                    margin-top: 10px;
+                }
+            }
+            .about {
+                width: 277px;
+                height: 203px;
+                margin-bottom: 50px;
+            }
+            nav {
+                
+                flex-grow: 1;
+                margin: 0 20px;
+                margin-top: 35px;
+            
+                ul {
+                  display: flex;
+                  flex-direction: column;
+                  list-style: none;
+                  gap: 15px;
+
+            
+                  li {
+                    a {
+                      text-decoration: none;
+                      color: #171717;
+                      font-size: 20px;
+                      font-weight: 600;
+            
+                      &:hover {
+                        color: #0056b3;
+                      }
+                    }
+                  }
+                }
+              }
+        }
+        .lower__foter {
+            width: 1440px;
+            height: 117px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #e0e0e0;
+            color: #718096;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 100px;
+            .seals {
+
+                display: flex;
+                flex-direction: row;
+                .seal {
+                    display: flex;
+                    text-align: flex-start;
+                    justify-content: center;
+                    &:not(:last-child) {
+                        margin-right: 50px;
+                    }
+                    &:last-child {
+                        margin-right: 100px;
+                    }
+                    .text {
+                        margin-left: 50px;
+                        margin-bottom: 50px;
+                   
+                    p {
+                       
+                    }
+                   }
+                }
+            }
+            .rating__portal {
+                display: flex;
+                margin-bottom: 60px;
+                .right__img {
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:900px ) {
+    footer {
+         .footer__container {
+            max-width: 100% ;
+            overflow: hidden;
+            .upper__footer {
+                .contactss {
+                    flex-direction: column;
+                }
+                .about {
+                    width: 227px;
+                    height: 162px;
+                    margin-right: 40%;
+                }
+                .BelEz {
+                    margin-left: 44px  ;
+                }
+                .PrezBel {
+                    margin-top: 30px;
+                    margin-left: 44px;
+                    width: 50%;
+                }
+                nav {
+                    margin: 0px;
+                    ul {
+                        gap: 1px;
+                        li{ 
+                           font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .lower__foter {
+                .seals {
+                    margin-top: 20px;
+                }
+                .rating__portal {
+                    display: none;
+                }
+            }
+         }
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        background: linear-gradient(-45deg, #FEF8F3, #FAF6FE);
+        height: auto; /* Высота по содержимому */
+
+        .footer__container {
+            height: auto;
+            width: 100%;
+            .upper__footer {
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .BelEz, .PrezBel {
+                    margin-left: 0;
+                    p {
+                        font-size: 12px;
+                        line-height: 1.4;
+                    }
+                }
+                .PrezBel {
+                    margin-top: 10px;
+                }
+
+                .about {
+                    display: none; /* Убираем лишний блок */
+                }
+            }
+
+            .lower__foter {
+                width: 100%;
+                flex-direction: column;
+                align-items: center; /* Центрируем содержимое */
+                margin-top: 90px;
+                padding-bottom: 80px;
+
+                .seals {
+                    justify-content: center;
+                    flex-wrap: no-wrap;
+                    gap: 10px;
+                    height: 65px;
+                    width: 459px;
+                    margin-top: 100px;
+
+                    .seal:nth-child(3) {
+                        display: none; /* Убираем третий элемент */
+                    }
+
+                    .seal {
+                        margin-bottom: 10px;
+
+                        .text {
+                            text-align: center;
+                            margin-left: 0;
+                            p {
+                                font-size: 12px;
+                                line-height: 1.3;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .copyright {
+                margin-top: 20px;
+                font-size: 16px;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+.feature__wrap {
+    background: linear-gradient(-45deg, #F4F7FF, #FCF6EF);
+    padding: 50px 20px;
+  
+    .feature__container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      max-width: 1440px;
+      margin: auto;
+  
+      .widget {
+        position: relative;
+        flex: 1 1 calc(50% - 25px); 
+        max-width: calc(50% - 25px);
+        height: 678px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .content {
+          margin-left: 50px;
+          margin-top: 70px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 487px;
+        }
+  
+        h3 {
+          font-size: 52px;
+          font-weight: 600;
+          margin: 0 0 10px;
+        }
+  
+        p {
+          font-size: 24px;
+          line-height: 1.5;
+          margin: 0 0 20px;
+        }
+  
+        button {
+          align-self: flex-start;
+          width: 194.58px;
+          height:72px;
+          font-size: 20px;
+          font-weight: 500;
+          color: #00357f;
+          background-color: #ffffff;
+          border: none;
+          border-radius: 100px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+  
+          &:hover {
+            background-color: #00357f;
+            color: #ffffff;
+          }
+        }
+      }
+  
+     
+  
+      .construction {
+        background-image: url('../../assets/div.sw-hero-video.png');
+        h3,
+        p {
+          color: #ffffff;
+        }
+  
+        button {
+          background-color: #ffffff;
+          color: #00357f;
+        }
+      }
+  
+      .utils {
+        background-image: url('../../assets/div.sw-hero-video (3).png');
+        h3,
+        p {
+          color: #00357f;
+        }
+  
+        button {
+          background-color: #00357f;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  
+  // Медиазапросы
+  @media (max-width: 900px) {
+    .feature__wrap {
+        padding: 10px 10px;
+    .feature__container {
+      gap: 15px;
+  
+      .widget {
+        flex: 1 1 calc(45% - 15px); // Два элемента в строке
+        max-width: 413px;
+        height: 551px; 
+        justify-content: space-between;
+         .content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            height: 400px;
+            justify-content: space-around;
+            p {
+                font-size: 16px;
+                opacity: 80%;
+                font-weight: 500;
+            }
+            button {
+                width: 180px;
+                height: 64px;
+                font-size: 18px;
+                font-weight: 500;
+            }
+         }
+         
+      }
+    }
+}
+  }
+  @media (max-width: 500px) {
+    .feature__wrap {
+      margin-top: 160px;
+
+  .feature__container {
+    gap: 15px;
+    flex-direction: column;
+
+    .widget {
+      flex: 1 1 calc(45% - 15px); // Два элемента в строке
+      max-width: 460px;
+      height: 476px;
+      .content {
+          display: flex;
+          flex-direction: column;
+          margin-top: 30px;
+          height: 377px;
+          justify-content: space-around;
+          margin-bottom: 20px;
+         h3 {
+            font-size: 28px;
+         } 
+          p {
+              font-size: 16px;
+              opacity: 80%;
+              font-weight: 500;
+          }
+          button {
+              width: 154px;
+              height: 56px;
+              font-size: 16px;
+              font-weight: 500;
+          }
+      }
+    }
+  }
+}
+  }
